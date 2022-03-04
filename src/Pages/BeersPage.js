@@ -9,10 +9,7 @@ function BeersPage() {
 
   useEffect(() => {
     axios.get("https://ih-beers-api2.herokuapp.com/beers").then((response) => {
-      setBeers(response.data);
-      console.log("response.data=========", response.data);
-      console.log("beers ======", beers);
-    });
+      setBeers(response.data);});
   }, []);
 
   return (
