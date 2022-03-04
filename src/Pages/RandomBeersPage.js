@@ -1,15 +1,11 @@
-import { Link } from "react-router-dom";
+import Header from "../components/Header";
 
-
-function RandomBeersPage(){
-
-    return(
-        <div>
-            <header>
-            <Link to="/"> Home </Link>
-            </header>
-        </div>
-    )
+function RandomBeersPage() {
+  return (
+    <div>
+      <Header />
+    </div>
+  );
 }
 
-export default RandomBeersPage
+export default RandomBeersPage;

@@ -1,14 +1,11 @@
-import { Link } from "react-router-dom";
+import Header from "../components/Header";
 
-function AddBeer(){
-
-    return(
-        <div>
-        <header>
-        <Link to="/"> Home </Link>
-        </header>
+function AddBeer() {
+  return (
+    <div>
+      <Header />
     </div>
-    )
+  );
 }
 
-export default AddBeer
+export default AddBeer;

@@ -1,7 +1,8 @@
 import { Link } from "react-router-dom";
 import { useState, useEffect } from "react";
 import axios from "axios";
-import Beer from "../components/beer";
+import Beer from "../components/Beer";
+import Header from "../components/Header";
 
 function BeersPage() {
   const [beers, setBeers] = useState([]);
@@ -15,13 +16,9 @@ function BeersPage() {
   }, []);
 
   return (
-    <div>
-      <header>
-      {" "}<Link to="/"> Home </Link>{" "}
-      </header>
-
+    <div> 
+      <Header />
       <Beer beers={beers} />
-
     </div>
   );
 }

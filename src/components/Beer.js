@@ -3,15 +3,16 @@ import { Link } from "react-router-dom";
 function Beer(props) {
   return (
     <div>
+    <hr />
       {props.beers.map((beer) => (
-        <Link to={`/apartments/${beer._id}`}>
+        
           <div key={beer._id}>
-            <img src={beer.img} alt="beer" />
-            <h3>Name: {beer.name}</h3>
+          <Link to={`/:_id ${beer._id}`}>
+            <img src={beer.image_url} alt="beer" width={50} />
+            <h3>Name: {beer.name}</h3> </Link>
             <p>tagline: {beer.tagline}</p>
             <p>Contributed by: {beer.contributed_by}</p>
           </div>
-        </Link>
       ))}
     </div>
   );
